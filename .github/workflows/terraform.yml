@@ -1,7 +1,7 @@
 name: "Terraform"
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -39,5 +39,4 @@ jobs:
       # - name: Terraform Apply
       #   run: terraform apply -auto-approve
       
-      - name: Terraform Destroy
-        run: terraform destroy -auto-approve
+
